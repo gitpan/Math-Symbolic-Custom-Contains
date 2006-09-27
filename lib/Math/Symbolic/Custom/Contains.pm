@@ -9,7 +9,7 @@ use Math::Symbolic::Custom::Base;
 BEGIN { *import = \&Math::Symbolic::Custom::Base::aggregate_import }
 
 use Math::Symbolic::ExportConstants qw/:all/;
-our $VERSION = '0.10';
+our $VERSION = '1.00';
 
 our $Aggregate_Export = [qw/contains_operator/];
 

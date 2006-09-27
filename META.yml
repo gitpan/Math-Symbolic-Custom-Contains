@@ -1,12 +1,24 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Math-Symbolic-Custom-Contains
-version:      0.10
-version_from: lib/Math/Symbolic/Custom/Contains.pm
-installdirs:  site
+---
+name: Math-Symbolic-Custom-Contains
+version: 1.00
+author:
+  - 'Steffen Mueller <smueller@cpan.org>'
+abstract: Find subtrees in Math::Symbolic expressions
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
 requires:
-    Math::Symbolic:                0.129
-    Test::More:                    0.44
-
-distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.17
+  Math::Symbolic: 0.129
+build_requires:
+  Test::More: 0
+recommends:
+  Test::Pod: 1.0
+  Test::Pod::Coverage: 1.0
+provides:
+  Math::Symbolic::Custom::Contains:
+    file: lib/Math/Symbolic/Custom/Contains.pm
+    version: 1.00
+generated_by: Module::Build version 0.280501
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
